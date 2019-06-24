@@ -8,3 +8,39 @@
   z-index: 999;
 }
 
+/*
+  body
+*/
+
+body {
+  background-image: url("../img/pug-wp.jpg") !important;
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.signupBox {
+  margin: 1em auto 0 auto;
+  width: 80%;
+  background: #212121;
+  border-radius: 5%;
+  padding-bottom: 1em;
+  padding-top: .05em;
+}
+
+.signup-btn {
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+/*
+  footer
+*/
+
+#footer {
+  margin-top: 50px;
+  color: #bdbdbd;
+}

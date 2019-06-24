@@ -9,8 +9,12 @@
     <meta name="author" content="Yael Brown">
     <meta name="copyright" content="">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -19,13 +23,67 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title> </title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Form Validation - Yael Brown</title>
   </head>
   <body>
     <!-- Main Section -->
     <main>
-      <h1>H1 text</h1>
-      <p>x</p>
+      <div class="container">
+        <div class="signupBox">
+
+          <!-- Signup Header -->
+          <div class="row">
+            <h2>Signup</h2>
+
+            <!-- Signup Form -->
+            <form class="col s12">
+
+              <!-- Name Row -->
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+
+              <!-- Email row -->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+              </div>
+
+              <!-- Password row -->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+
+              <!-- Signup Button -->
+              <button class="signup-btn btn btn-flat btn-large waves-effect waves-dark white grey-text text-darken-3" type="submit" name="action">Signup
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer section -->
+      <footer id="footer">
+        <div class="container center">
+          <p>Created by Yael Brown</p>
+        </div>
+      </footer>
     </main>
 
     <!-- Optional JavaScript -->
