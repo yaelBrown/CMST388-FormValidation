@@ -26,7 +26,7 @@ body {
   margin: 1em auto 0 auto;
   width: 80%;
   background: #212121;
-  border-radius: 5%;
+  border-radius: 2%;
   padding-bottom: 1em;
   padding-top: .05em;
 }
@@ -42,5 +42,5 @@ body {
 
 #footer {
   margin-top: 50px;
-  color: #bdbdbd;
+  color: #fff;
 }

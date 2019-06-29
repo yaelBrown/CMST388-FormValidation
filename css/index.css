@@ -25,3 +25,8 @@ input[type=password].valid,input[type=text].valid,input[type=email].invalid,inpu
 .input-field input[type=text]:focus + label {
   color: #fff;
 }
+
+.dropdown-content{
+  width: max-content !important;
+  height:auto !important;
+}
