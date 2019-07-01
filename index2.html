@@ -33,7 +33,7 @@
           <div class="fi" >
             <label>
               <span>First Name *</span>
-              <input id="fname" required min="2" max="50" data-sname="fname" data-lname="FirstName" autocomplete="off" placeholder="First Name" onkeypress="return (event.charCode > 64 &&
+              <input type="text" id="fname" required  data-sname="fname" data-lname="FirstName" autocomplete="off" placeholder="First Name" onkeypress="return (event.charCode > 64 &&
               event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"/>
             </label>
           </div>
@@ -42,7 +42,7 @@
           <div class="fi" >
             <label>
               <span>Last Name *</span>
-              <input id="lname" required min="2" max="50" data-sname="lname" data-lname="LastName" autocomplete="off" placeholder="Last Name" onkeypress="return (event.charCode > 64 &&
+              <input id="lname" type="text" required  data-sname="lname" data-lname="LastName" autocomplete="off" placeholder="Last Name" onkeypress="return (event.charCode > 64 &&
               event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"/>
             </label>
           </div>
@@ -51,7 +51,7 @@
           <div class="fi" >
             <label>
               <span>Address *</span>
-              <input id="address" required min="2" max="50" data-sname="addr" data-lname="Address" autocomplete="off" placeholder="123 State St."/>
+              <input id="address" type="text" required  data-sname="addr" data-lname="Address" autocomplete="off" placeholder="123 State St."/>
             </label>
           </div>
 
@@ -59,7 +59,7 @@
           <div class="fi" >
             <label>
               <span>City *</span>
-              <input id="city" type="text" required min="2" max="50" data-sname="city" data-lname="City" autocomplete="off" placeholder="City" onkeypress="return (event.charCode > 64 &&
+              <input id="city" type="text" required data-sname="city" data-lname="City" autocomplete="off" placeholder="City" onkeypress="return (event.charCode > 64 &&
               event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"/>
             </label>
           </div>
@@ -129,7 +129,7 @@
           <div class="fi" >
             <label>
               <span>Zip Code *</span>
-              <input id="zip" type="tel" required min="2" maxlength="5" data-sname="zip" data-lname="ZipCode" autocomplete="off" placeholder="12345"/>
+              <input id="zip" type="tel" required maxlength="5" data-sname="zip" data-lname="ZipCode" autocomplete="off" placeholder="12345"/>
             </label>
           </div>
 
@@ -137,7 +137,7 @@
           <div class="fi" >
             <label>
               <span>Phone *</span>
-              <input id="phone" type="tel" required min="6" maxlength="10" data-sname="phone" data-lname="PhoneNumber" autocomplete="off" placeholder="1234567890"/>
+              <input id="phone" type="tel" required maxlength="10" data-sname="phone" data-lname="PhoneNumber" autocomplete="off" placeholder="1234567890"/>
             </label>
           </div>
 
@@ -145,7 +145,7 @@
           <div class="fi" >
             <label>
               <span>E-Email *</span>
-              <input id="email" required min="2" max="50" data-sname="email" data-lname="EmailAddr" autocomplete="off" placeholder="email@email.com"/>
+              <input id="email" type="email" required  data-sname="email" data-lname="EmailAddr" autocomplete="off" placeholder="email@email.com"/>
             </label>
           </div>
 
@@ -153,7 +153,7 @@
           <div class="fi" >
             <label>
               <span>Confirm E-Email *</span>
-              <input id="confEmail" required min="2" max="50" data-sname="confEmail" data-lname="ConfirmEmailAddr" autocomplete="off" placeholder="email@email.com"/>
+              <input id="confEmail" type="email" required  data-sname="confEmail" data-lname="ConfirmEmailAddr" autocomplete="off" placeholder="email@email.com"/>
             </label>
           </div>
 
@@ -161,33 +161,29 @@
           <div class="fi" >
             <label>
               <span>Comments</span>
-              <textarea id="comments" required min="6" max="250" data-sname="comments" data-lname="Comments" placeholder="Add your comments here" maxlength="250"></textarea>
+              <textarea id="comments" required data-sname="comments" data-lname="Comments" placeholder="Add your comments here" maxlength="250"></textarea>
             </label>
           </div>
 
           <!-- Meal Preference (radio) -->
           <div class="fi" >
-            <label>
-              <span>Meal Preference *</span>
-              <small>(Select One)</small>
-              <br/>
-              <input type="radio" name="mealPref" value="vegan"> Vegan<br/>
-              <input type="radio" name="mealPref" value="vegetarian"> Vegetarian<br/>
-              <input type="radio" name="mealPref" value="meat"> Non-Vegetarian<br/>
-            </label>
+            <span class="mealPref">Meal Preference *</span>
+            <small>(Select One)</small>
+            <br/>
+            <input type="radio" name="mealPref" value="vegan"> Vegan<br/>
+            <input type="radio" name="mealPref" value="vegetarian"> Vegetarian<br/>
+            <input type="radio" name="mealPref" value="meat"> Non-Vegetarian<br/>
           </div>
 
           <!-- Contact Method (radio) -->
           <div class="fi" >
-            <label>
-              <span>Contact Method *</span>
-              <small>(Select More Than One)</small>
-              <br/>
-              <input type="checkbox" name="contactMeth" value="contPhone"> Phone<br/>
-              <input type="checkbox" name="contactMeth" value="contEmail"> E-mail<br/>
-              <input type="checkbox" name="contactMeth" value="contMail"> Mail<br/>
-              <input type="checkbox" name="contactMeth" value="contLinkedIn"> LinkedIn<br/>
-            </label>
+            <span class="mealPref">Contact Method *</span>
+            <small>(Select More Than One)</small>
+            <br/>
+            <input type="checkbox" name="contactMeth" value="contPhone"> Phone<br/>
+            <input type="checkbox" name="contactMeth" value="contEmail"> E-mail<br/>
+            <input type="checkbox" name="contactMeth" value="contMail"> Mail<br/>
+            <input type="checkbox" name="contactMeth" value="contLinkedIn"> LinkedIn<br/>
           </div>
 
           <!-- Submit -->
@@ -200,14 +196,74 @@
           <!-- Reset -->
           <div class="fi" >
             <label>
-              <input type="reset" value="reset" id="submit" />
+              <input type="reset" value="reset" id="reset" />
             </label>
           </div>
 
       </form>
 
       <!-- Javascript for application -->
-      <script src="./js/formfunctionality.js"></script>
+      <script>
+        // Log that this code has been loaded
+        console.log("Form functionality has been loaded");
+
+        // Declare Variables
+        var inputfade = document.querySelectorAll('.fi input,.fi select,.fi textarea');
+        var ifln = inputfade.length;
+
+        // Input Fade function
+        function input_fade(elem, on) {
+          var span_elem = elem.parentNode.getElementsByTagName('span')[0];
+
+          if (span_elem) {
+            span_elem.style.color = on ? 'rgb(0, 188, 215)' : '#000';
+          }
+
+          if (is_text_input(elem)) {
+            if (on) {
+              elem.setAttribute('placeholder', '');
+              span_elem.style.opacity = '100';
+            } else {
+              if (!elem.value) {
+                elem.setAttribute('placeholder', span_elem.innerHTML);
+                span_elem.style.opacity = '0';
+              }
+            }
+          }
+        }
+
+        for (var i = 0; i < ifln; i++) {
+          var elem = inputfade[i];
+          var span_elem = elem.parentNode.getElementsByTagName('span')[0];
+
+          if (is_text_input(elem)) {
+            //elem.setAttribute('placeholder', span_elem.innerHTML);
+            if (!elem.value) {
+              span_elem.style.opacity = '0';
+            }
+          }
+
+          inputfade[i].onfocus = function() {
+            input_fade(this, true);
+          }
+
+          inputfade[i].onblur = function() {
+            input_fade(this, false);
+          }
+        }
+
+        // Text input
+        function is_text_input(elem) {
+          el_name = elem.nodeName.toLowerCase();
+          el_type = elem.getAttribute('type');
+
+          if ((el_name == 'input' && el_type != 'checkbox' && el_type != 'radio' && el_type != 'submit') || el_name == 'textarea') {
+            return true;
+          }
+
+          return false;
+        }
+      </script>
 
       <script>
         // Verify app.js file loaded
@@ -365,6 +421,9 @@
     <footer class="footer">
       <div class="container footer">
         <p>Created by Yael Brown</p>
+        <br/>
+        <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F%7Ect388b06%2FformValidation%2Findex2.html">HTML Validation</a>
+        <br/>
       </div>
     </footer>
   </body>

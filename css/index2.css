@@ -122,6 +122,11 @@ label span {
   transition: opacity 0.5s;
 }
 
+.mealPref {
+  font-size: 17px;
+  font-weight: 600;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
